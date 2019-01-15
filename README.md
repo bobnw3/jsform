@@ -1,4 +1,4 @@
-# 2011年为方便项目开发的通用控件，html内表单控件聚焦切换
+# 2011年为方便PC项目开发的通用控件，html内表单控件聚焦切换
 函数说明：
 1：在页面中引用js文件：“<script src="KeyBoardControl.js"></script>”
 2：form表单id命名“keyBoardForm”
