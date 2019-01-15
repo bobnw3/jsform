@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>表单控件键盘移动示例</title>
+
+<script src="KeyBoardControl.js"></script>
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="5" cellpadding="0">
+  <tr>
+    <td>函数说明：</td>
+  </tr>
+   <tr>
+    <td>1：在页面中引用js文件：“&lt;script src="basicParameters.js"&gt;&lt;/script&gt;”，“&lt;script src="KeyBoardControl.js"&gt;&lt;/script&gt;”</td>
+  </tr> 
+   <tr>
+    <td>2：form表单id命名“keyBoardForm”</td>
+  </tr>   
+   <tr>
+    <td>3：js中调用，FormKeyBoardMain.init('keyBoardForm');</td>
+  </tr>   
+   <tr>
+    <td>4：先聚焦到表单某一控件，然后按小键盘“↑”，向上移动，“↓”向下移动，“←”选中或切换选项，“→”选中或切换选项</td>
+  </tr>  
+     <tr>
+    <td>备注：目前左右切换只支持“select”,“radio”,“checkbox”控件。在IE6,IE8,FireFox浏览器下测试通过</td>
+  </tr>
+   
+</table>
+
+<form action="" name="keyBoardForm" id="keyBoardForm" method="post"><table width="500" border="0" cellspacing="5" cellpadding="0">
+<tr><td colspan="2">示例表单</td></tr>
+  <tr>
+    <td>&nbsp;姓名：</td> <td>&nbsp;<input type="text" name="username" id="username" /></td>
+  </tr>
+     
+  <tr>
+    <td>&nbsp;密码：</td> <td>&nbsp;<input type="password" name="userpass" id="userpass" /></td>
+  </tr>  
+  <tr>
+    <td>&nbsp;类型：</td> <td>&nbsp;<select name="typeoption" id="typeoption"><option value="">请选择</option><option value="a">A</option><option value="b">B</option></select></td>
+  </tr>    
+  <tr>
+    <td>&nbsp;性别：</td> <td>&nbsp;<input type="radio" name="sex" id="sex" value="1" />男<input type="radio" name="sex" id="sex" value="0" />女<input type="radio" name="sex" id="sex" value="2" />保密</td>
+  </tr> 
+  
+  
+  <tr>
+    <td>&nbsp;分数：</td> <td>&nbsp;<input type="text" name="score" id="score" /></td>
+  </tr>  
+   <tr>
+    <td>&nbsp;选择：</td> <td>&nbsp;<input type="checkbox" name="checktest" id="checktest" value="1" />是</td>
+  </tr>
+    <tr>
+    <td>&nbsp;类型：</td> <td>&nbsp;<input type="radio" name="testtypes" id="testtypes" value="1" />类型1<input type="radio" name="testtypes" id="testtypes" value="0" />类型2<input type="radio" name="testtypes" id="testtypes" value="2" />类型3</td>
+  </tr> 
+    <tr>
+    <td>&nbsp;内容：</td> <td>&nbsp;<textarea cols="40" rows="10" name="remark" id="remark"></textarea></td>
+  </tr>  
+    <tr>
+    <td >&nbsp;测试：</td> <td>&nbsp;<input type="text" name="tests" id="tests" /></td>
+  </tr>  
+  
+      <tr>
+    <td >&nbsp; </td> <td>&nbsp;<input type="button" name="btn" id="btn" value="测试" /></td>
+  </tr> 
+</table></form>
+<script language="javascript">
+FormKeyBoardMain.init('keyBoardForm');
+</script>
+
+
+
+
+</body>
+</html>
